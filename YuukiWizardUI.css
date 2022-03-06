@@ -2,198 +2,197 @@
 
 /* Rever code blocks' font to default discord's font */
 code {
-    font-family: 'Menlo', 'Consolas', 'Monaco', 'monospace' !important;
-  }
-  
-  /* Fix for the Experimental feature AccountSwitcher */
-  .authBoxExpanded-AN2aH1{
-      background-color: var(--darkgrey) !important;
-  }
-  .input-2g-os5{
-      background-color: var(--grey5) !important;
-  }
-  .navRow-dG-XX8{
-      background-color: var(--darkgrey) !important;
-  }
-  
-  /* Adds a border around the right click menù and a few more */
-  .menu-1QACrS{
-      border: 1px solid var(--Primary);
-      border-radius: var(--Rounding);
-  }
-  .item-1OdjEX:hover, .customItem-2CxBSo:hover{
-      border: 1px solid var(--Primary);
-      border-radius: var(--Rounding);
-  }
-  
-  /* This is an addon that moves the "user is typing" text to the bottom of the app, like the default discord.*/
-  .typing-2J1mQU {
-      background: var(--bg-sendmessage);
-      position: relative;
-      margin-bottom: -25px;
-      left: 48px;
-  }
-  [class*=channelTextAreaDisabled] {
-      display: none;
-  }
-  .chat-2ZfjoI [class*=channelTextAreaDisabled] .textArea-2CLwUE>.placeholder-1_mJY1:after {
-      content: "You do not have permission to send messages in this channel.";
-  }
-  .form-3gdLxP{
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column-reverse;
-      width: 100% !important;
-  }
-  
-  /* Recolor for selected items in various menùs */
-  .navButton-1XuvI-[aria-selected="true"], .item-2idW98[aria-checked="true"], .bd-title, .option-2eIyOn[aria-selected="true"]{
-      background-color: var(--Primary);
-  }
-  .navButton-1XuvI-[aria-selected="false"]:hover, .item-2idW98[aria-selected="false"]:hover, .option-2eIyOn[aria-selected="false"]:hover{
-      background-color: var(--grey) !important;
-  }
-  
-  /* Hide the account change notification */
-  .toast-q3Y4wI{
-      display: none;
-  }
-  
-  /* Better Jump To Present Button */
-  [class*="jumpToPresentBar"] {
-      display: contents;
-  }
-  [class*="jumpToPresentBar"] > button:first-child {
-      display: none;
-  }
-  [class*="jumpToPresentBar"] > button:last-child {
-      position: absolute;
-      z-index: 1;
-      bottom: 24px;
-      right: 22px;
-      padding: 8px !important;
-      height: auto;
-      background-color: var(--Primary);
-      box-shadow: var(--elevation-high);
-      border-radius: 100px;
-      display: flex;
-      font-size: 0px;
-      color: transparent;
-      transition: font-size .2s .1s, color .2s, padding .4s .1s;
-  }
-  [class*="jumpToPresentBar"] > button svg {
-      order: -1;
-      margin: 0px;
-      height: 24px;
-      width: 24px;
-      top: auto;
-      margin-right: 0px;
-      margin-left: 0px;
-      color: #FFFFFF;
-      transition: margin .6s;
-  }
-  [class*="jumpToPresentBar"]:hover > button {
-      padding: 8px 18px !important;
-      font-size: 14px;
-      color: #FFFFFF;
-      transition: font-size .2s, color .2s .1s, padding .4s;
-  }
-  [class*="jumpToPresentBar"]:hover > button svg {
-      margin-right: 2px;
-      margin-left: -6px;
-  }
-  
-  /* sus files */
-  .art-3yfHpl{
-    content: url("https://cdn.sunstorm.rocks/files/sus.png");
-    margin-top: -105px;
-  }
-  .title-2HpNgU{
-      text-indent: -1000px;
-      line-height: 0;
-  }
-  .title-2HpNgU:after{
-      content: "This file is hella sus";
-      text-indent: 0;
-      display: block;
-      line-height: initial;
-  }
-  .body-2uVWQs{
-      text-indent: -10000px;
-      line-height: 0;
-  }
-  .body-2uVWQs:after{
-      content: "Are you sure you want to download this mysterious file from this sussy baka?";
-      text-indent: 0;
-      display: block;
-      line-height: initial;
-  }
-  .focusLock-2tveLW .contents-3ca1mk{
-      text-indent: -10000px;
-      line-height: 0;
-  }
-  .focusLock-2tveLW .lookFilled-yCfaCM:after{
-      content: "Goodbye sus-iness";
-      text-indent: 0;
-      display: block;
-      line-height: initial;
-  }
-  .focusLock-2tveLW .lookLink-15mFoz:after{
-      content: "You are sus";
-      text-indent: 0;
-      display: block;
-      line-height: initial;
-  }
-  
-  /*
-  ------------------PLUGIN FIXES BELOW------------------
-  */
-  
-  /* CharCounter fix */
-  .counter-uAzbKp{
-      text-align: right;
-      bottom: 0px;
-      right: 5px;
-      background-color: var(--grey);
-      padding: 1px;
-      border: 1px var(--Primary) solid;
-      color: while;
-  }
-  .flairContainer-xF7I3K, .characterCount-8yNPfb{
-      display: none;
-  }
-  .emojiButtonNormal-35P0_i, .emojiButtonHovered-s44uQ8{
-      bottom: 10px;
-  }
-  
-  /* ShowHiddenChannels "Channel access" fix for WizardUI */
-  .tabContent-nZ-1U5{
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-  }
-  .marginBottom20-315RVT{
-      width: 100%;
-  }
-  
-  /* UserDetails user popup's friends avatar fix */
-  .avatar-b5OQ1N{
-      width: 100% !important;
-      height: 100% !important;
-  }
-  
-  /* Fix for the GameActivityToggle plugin icon overlapping the user tag */
-  .subtext-2HDqJ7{
-      left: -14px !important;
-  }
-  
-  /* Better invites */
-  .wrapper-1HIH0j{
-      width: 432px;
-  }
-  .lookFilled-yCfaCM.colorGreen-3y-Z79{
-      background-color: var(--Primary) !important;
-  }
-  
-  
+  font-family: 'Menlo', 'Consolas', 'Monaco', 'monospace' !important;
+}
+
+/* Fix for the Experimental feature AccountSwitcher */
+.authBoxExpanded-AN2aH1{
+    background-color: var(--darkgrey) !important;
+}
+.input-2g-os5{
+    background-color: var(--grey5) !important;
+}
+.navRow-dG-XX8{
+    background-color: var(--darkgrey) !important;
+}
+
+/* Adds a border around the right click menù and a few more */
+.menu-1QACrS{
+    border: 1px solid var(--Primary);
+    border-radius: var(--Rounding);
+}
+.item-1OdjEX:hover, .customItem-2CxBSo:hover{
+    border: 1px solid var(--Primary);
+    border-radius: var(--Rounding);
+}
+
+/* This is an addon that moves the "user is typing" text to the bottom of the app, like the default discord.*/
+.typing-2J1mQU {
+    background: var(--bg-sendmessage);
+    position: relative;
+    margin-bottom: -25px;
+    left: 48px;
+}
+[class*=channelTextAreaDisabled] {
+    display: none;
+}
+.chat-2ZfjoI [class*=channelTextAreaDisabled] .textArea-2CLwUE>.placeholder-1_mJY1:after {
+    content: "You do not have permission to send messages in this channel.";
+}
+.form-3gdLxP{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    width: 100% !important;
+}
+
+/* Recolor for selected items in various menùs */
+.navButton-1XuvI-[aria-selected="true"], .item-2idW98[aria-checked="true"], .bd-title, .option-2eIyOn[aria-selected="true"]{
+    background-color: var(--Primary);
+}
+.navButton-1XuvI-[aria-selected="false"]:hover, .item-2idW98[aria-selected="false"]:hover, .option-2eIyOn[aria-selected="false"]:hover{
+    background-color: var(--grey) !important;
+}
+
+/* Hide the account change notification */
+.toast-q3Y4wI{
+    display: none;
+}
+
+/* Better Jump To Present Button */
+[class*="jumpToPresentBar"] {
+    display: contents;
+}
+[class*="jumpToPresentBar"] > button:first-child {
+    display: none;
+}
+[class*="jumpToPresentBar"] > button:last-child {
+    position: absolute;
+    z-index: 1;
+    bottom: 24px;
+    right: 22px;
+    padding: 8px !important;
+    height: auto;
+    background-color: var(--Primary);
+    box-shadow: var(--elevation-high);
+    border-radius: 100px;
+    display: flex;
+    font-size: 0px;
+    color: transparent;
+    transition: font-size .2s .1s, color .2s, padding .4s .1s;
+}
+[class*="jumpToPresentBar"] > button svg {
+    order: -1;
+    margin: 0px;
+    height: 24px;
+    width: 24px;
+    top: auto;
+    margin-right: 0px;
+    margin-left: 0px;
+    color: #FFFFFF;
+    transition: margin .6s;
+}
+[class*="jumpToPresentBar"]:hover > button {
+    padding: 8px 18px !important;
+    font-size: 14px;
+    color: #FFFFFF;
+    transition: font-size .2s, color .2s .1s, padding .4s;
+}
+[class*="jumpToPresentBar"]:hover > button svg {
+    margin-right: 2px;
+    margin-left: -6px;
+}
+
+/* sus files */
+.art-3yfHpl{
+  content: url("https://cdn.sunstorm.rocks/files/sus.png");
+  margin-top: -105px;
+}
+.title-2HpNgU{
+    text-indent: -1000px;
+    line-height: 0;
+}
+.title-2HpNgU:after{
+    content: "This file is hella sus";
+    text-indent: 0;
+    display: block;
+    line-height: initial;
+}
+.body-2uVWQs{
+    text-indent: -10000px;
+    line-height: 0;
+}
+.body-2uVWQs:after{
+    content: "Are you sure you want to download this mysterious file from this sussy baka?";
+    text-indent: 0;
+    display: block;
+    line-height: initial;
+}
+.focusLock-2tveLW .contents-3ca1mk{
+    text-indent: -10000px;
+    line-height: 0;
+}
+.focusLock-2tveLW .lookFilled-yCfaCM:after{
+    content: "Goodbye sus-iness";
+    text-indent: 0;
+    display: block;
+    line-height: initial;
+}
+.focusLock-2tveLW .lookLink-15mFoz:after{
+    content: "You are sus";
+    text-indent: 0;
+    display: block;
+    line-height: initial;
+}
+
+/*
+------------------PLUGIN FIXES BELOW------------------
+*/
+
+/* CharCounter fix */
+.counter-uAzbKp{
+    text-align: right;
+    bottom: 0px;
+    right: 5px;
+    background-color: var(--grey);
+    padding: 1px;
+    border: 1px var(--Primary) solid;
+    color: while;
+}
+.flairContainer-xF7I3K, .characterCount-8yNPfb{
+    display: none;
+}
+.emojiButtonNormal-35P0_i, .emojiButtonHovered-s44uQ8{
+    bottom: 10px;
+}
+
+/* ShowHiddenChannels "Channel access" fix for WizardUI */
+.tabContent-nZ-1U5{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.marginBottom20-315RVT{
+    width: 100%;
+}
+
+/* UserDetails user popup's friends avatar fix */
+.avatar-b5OQ1N{
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* Fix for the GameActivityToggle plugin icon overlapping the user tag */
+.subtext-2HDqJ7{
+    left: -14px !important;
+}
+
+/* Better invites */
+.wrapper-1HIH0j{
+    width: 432px;
+}
+.lookFilled-yCfaCM.colorGreen-3y-Z79{
+    background-color: var(--Primary) !important;
+}
+

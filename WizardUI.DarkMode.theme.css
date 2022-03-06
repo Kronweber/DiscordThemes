@@ -18,8 +18,7 @@
 @import url("https://goldenlys.github.io/WizardUI/addons/HoverMembers.css");
 
 /* An addon with edits made by Yuuki to fix compatibility with some plugins and a few other minor things */
-@import url("https://raw.githubusercontent.com/Yuuki2628/WizardUI-additions/main/YuukiWizardUI.css");
-
+@import url("https://raw.githack.com/Yuuki2628/WizardUI-additions/main/YuukiWizardUI.css");
 
 *, *:before, *:after {
     /* MAIN VARIABLES */

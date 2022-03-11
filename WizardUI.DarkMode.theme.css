@@ -20,8 +20,8 @@
 /* An addon with edits made by Yuuki to fix compatibility with some plugins and a few other minor things */
 @import url("https://raw.githack.com/Yuuki2628/WizardUI-additions/main/YuukiWizardUI.css");
 
-/* Sus file warning */
-@import url("https://raw.githack.com/Yuuki2628/WizardUI-additions/main/SusFiles.css");
+/* Sus file warning 
+@import url("https://raw.githack.com/Yuuki2628/WizardUI-additions/main/SusFiles.css");*/
 
 *, *:before, *:after {
     /* MAIN VARIABLES */
@@ -73,6 +73,11 @@
     /* ROUNDING */
     --Rounding: 5px;
     --StatusRounding: 4.5;
+}
+
+/* Smoother transition for settings for low end pcs */
+.layer-86YKbF {
+    transform: none !important;
 }
 
 /* Support code */

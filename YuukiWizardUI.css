@@ -26,6 +26,16 @@ code {
     border-radius: var(--Rounding);
 }
 
+/* Recolor the switch button in the AccountSwitcher */
+.userActions-2T4MMd .button-f2h6uQ{
+    background-color: var(--grey) !important;
+    color: white;
+}
+.userActions-2T4MMd .button-f2h6uQ:hover{
+    background-color: var(--Primary) !important;
+    color: white !important;
+}
+
 /* This is an addon that moves the "user is typing" text to the bottom of the app, like the default discord.*/
 .typing-2J1mQU {
     background: var(--bg-sendmessage);
@@ -134,7 +144,14 @@ code {
 .marginBottom20-315RVT{
     width: 100%;
 }
-
+.tabContent-nZ-1U5 .listRow-7SfZww{
+    background-color: var(--grey);
+    border: 1px solid var(--Primary);
+    border-radius: var(--Rounding);
+}
+.tabContent-nZ-1U5 .listRow-7SfZww:hover{
+    background-color: var(--Hover);
+}
 /* UserDetails user popup's friends avatar fix */
 .avatar-b5OQ1N{
     width: 100% !important;

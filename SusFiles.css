@@ -1,41 +1,60 @@
 /* sus files */
 .art-3yfHpl{
-  content: url("https://cdn.sunstorm.rocks/files/sus.png");
-  margin-top: -105px;
-}
-.title-2HpNgU{
-    text-indent: -1000px;
-    line-height: 0;
-}
-.title-2HpNgU:after{
-    content: "This file is hella sus";
-    text-indent: 0;
-    display: block;
-    line-height: initial;
-}
-.body-2uVWQs{
-    text-indent: -10000px;
-    line-height: 0;
-}
-.body-2uVWQs:after{
-    content: "Are you sure you want to download this mysterious file from this sussy baka?";
-    text-indent: 0;
-    display: block;
-    line-height: initial;
-}
-.focusLock-2tveLW .contents-3ca1mk{
-    text-indent: -10000px;
-    line-height: 0;
-}
-.focusLock-2tveLW .lookFilled-yCfaCM:after{
-    content: "Reject sussiness";
-    text-indent: 0;
-    display: block;
-    line-height: initial;
-}
-.focusLock-2tveLW .lookLink-15mFoz:after{
-    content: "Follow the sus link";
-    text-indent: 0;
-    display: block;
-    line-height: initial;
-}
+    content: url("https://cdn.sunstorm.rocks/files/sus.png");
+    margin-top: -105px;
+  }
+  .title-2HpNgU{
+      text-indent: -1000px;
+      line-height: 0;
+  }
+  .title-2HpNgU:after{
+      content: "This file is hella sus";
+      text-indent: 0;
+      display: block;
+      line-height: initial;
+  }
+  .body-2uVWQs{
+      text-indent: -10000px;
+      line-height: 0;
+  }
+  .body-2uVWQs:after{
+      content: "Are you sure you want to download this mysterious file from this sussy baka?";
+      text-indent: 0;
+      display: block;
+      line-height: initial;
+  }
+  .focusLock-2tveLW .root-g14mjS .flex-2S1XBF .contents-3ca1mk{
+      text-indent: -10000px;
+      line-height: 0;
+  }
+  .focusLock-2tveLW .root-g14mjS .flex-2S1XBF .lookFilled-yCfaCM:after{
+      content: "Reject sussiness";
+      text-indent: 0;
+      display: block;
+      line-height: initial;
+  }
+  .focusLock-2tveLW .root-g14mjS .flex-2S1XBF .colorTransparent-13Bvvi:after{
+      content: "Follow the sus link";
+      text-indent: 0;
+      display: block;
+      line-height: initial;
+  }
+  
+  .focusLock-2tveLW .root-g14mjS .flex-2S1XBF .cancelButton-3QVBfe::after{
+      content: "Cancel";
+      text-indent: 0;
+      display: block;
+      line-height: initial;
+  }
+  .focusLock-2tveLW .root-g14mjS .flex-2S1XBF .sizeSmall-wU2dO-::after{
+      content: "Go Live";
+      text-indent: 0;
+      display: block;
+      line-height: initial;
+  }
+  .focusLock-2tveLW .root-g14mjS .flex-2S1XBF .colorPrimary-2AuQVo::after{
+      content: "Back";
+      text-indent: 0;
+      display: block;
+      line-height: initial;
+  }

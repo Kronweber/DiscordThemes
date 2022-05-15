@@ -1,52 +1,5 @@
-/* UserDetails user popup */
-.bodyInnerWrapper-2bQs1k{
-    margin-top: 110px !important;
-  }
-  .nickname-t08Mck{
-    margin-top: 10px;
-  }
-  .activityUserPopout-2MzGCj{
-    margin-top: 0 !important;
-  }
-  .UserDetails-mutualServers-body, 
-  .UserDetails-connections-connectionsBody, 
-  .UserDetails-mutualFriends-body{
-    position: relative;
-    margin-top: auto;
-    top: auto !important;
-    height: auto;
-    min-height: 34px;
-  }
-  .activityUserPopout-2MzGCj{
-    margin-top: 40px !important;
-    padding: 0% !important;
-  }
-  .customStatus-3XAoF9{
-    margin: auto;
-  }
-  .customStatus-3XAoF9{
-    display: none;
-  }
-  .userInfoSection-3her-v{
-    display: none !important;
-  }
-  .bodyTitle-2Az3VQ, .rolesList-3uZoaa, .note-Go5ZP2{
-    position: relative;
-    height: 115px;
-    top: -115px;
-  }
-  .rolesList-3uZoaa{
-    overflow: auto;
-  }
-  
-  /* Better invites */
-  .wrapper-1HIH0j{
-      width: 432px;
-  }
-  .lookFilled-yCfaCM.colorGreen-3y-Z79{
-      background-color: var(--Primary) !important;
-  }
-  
+/* CSS snippets made by Yuuki#2628 as extra customizations to the T1 theme */
+
   /* This is an addon that moves the "user is typing" text to the bottom of the app, like the default discord.*/
   .typing-2J1mQU {
     background: var(--bg-sendmessage);
@@ -76,3 +29,57 @@
   .mainContent-20q_Hp[aria-label^="unread"] .channelName-3KPsGw{
     color: white !important;
   }
+
+  
+/*
+------------------PLUGIN FIXES BELOW------------------
+*/
+
+/* UserDetails user popup */
+.bodyInnerWrapper-2bQs1k{
+  margin-top: 110px !important;
+}
+.nickname-t08Mck{
+  margin-top: 10px;
+}
+.activityUserPopout-2MzGCj{
+  margin-top: 0 !important;
+}
+.UserDetails-mutualServers-body, 
+.UserDetails-connections-connectionsBody, 
+.UserDetails-mutualFriends-body{
+  position: relative;
+  margin-top: auto;
+  top: auto !important;
+  height: auto;
+  min-height: 34px;
+}
+.activityUserPopout-2MzGCj{
+  margin-top: 40px !important;
+  padding: 0% !important;
+}
+.customStatus-3XAoF9{
+  margin: auto;
+}
+.customStatus-3XAoF9{
+  display: none;
+}
+.userInfoSection-3her-v{
+  display: none !important;
+}
+.bodyTitle-2Az3VQ, .rolesList-3uZoaa, .note-Go5ZP2{
+  position: relative;
+  height: 115px;
+  top: -115px;
+}
+.rolesList-3uZoaa{
+  overflow: auto;
+}
+
+/* Better invites */
+.wrapper-1HIH0j{
+    width: 432px;
+}
+.lookFilled-yCfaCM.colorGreen-3y-Z79{
+    background-color: var(--Primary) !important;
+}

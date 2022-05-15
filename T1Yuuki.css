@@ -1,0 +1,78 @@
+/* UserDetails user popup */
+.bodyInnerWrapper-2bQs1k{
+    margin-top: 110px !important;
+  }
+  .nickname-t08Mck{
+    margin-top: 10px;
+  }
+  .activityUserPopout-2MzGCj{
+    margin-top: 0 !important;
+  }
+  .UserDetails-mutualServers-body, 
+  .UserDetails-connections-connectionsBody, 
+  .UserDetails-mutualFriends-body{
+    position: relative;
+    margin-top: auto;
+    top: auto !important;
+    height: auto;
+    min-height: 34px;
+  }
+  .activityUserPopout-2MzGCj{
+    margin-top: 40px !important;
+    padding: 0% !important;
+  }
+  .customStatus-3XAoF9{
+    margin: auto;
+  }
+  .customStatus-3XAoF9{
+    display: none;
+  }
+  .userInfoSection-3her-v{
+    display: none !important;
+  }
+  .bodyTitle-2Az3VQ, .rolesList-3uZoaa, .note-Go5ZP2{
+    position: relative;
+    height: 115px;
+    top: -115px;
+  }
+  .rolesList-3uZoaa{
+    overflow: auto;
+  }
+  
+  /* Better invites */
+  .wrapper-1HIH0j{
+      width: 432px;
+  }
+  .lookFilled-yCfaCM.colorGreen-3y-Z79{
+      background-color: var(--Primary) !important;
+  }
+  
+  /* This is an addon that moves the "user is typing" text to the bottom of the app, like the default discord.*/
+  .typing-2J1mQU {
+    background: var(--bg-sendmessage);
+    position: relative;
+    margin-bottom: -25px;
+    left: 48px;
+  }
+  [class*=channelTextAreaDisabled] {
+    display: none;
+  }
+  .chat-2ZfjoI [class*=channelTextAreaDisabled] .textArea-2CLwUE>.placeholder-1_mJY1:after {
+    content: "You do not have permission to send messages in this channel.";
+  }
+  .form-3gdLxP{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    width: 100% !important;
+  }
+  
+  /* Hide the account change notification */
+  .toast-q3Y4wI{
+    display: none;
+  }
+
+  /* Colored unread channels */
+  .mainContent-20q_Hp[aria-label^="unread"] .channelName-3KPsGw{
+    color: white !important;
+  }

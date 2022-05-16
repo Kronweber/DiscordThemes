@@ -32,6 +32,9 @@
 .mainContent-20q_Hp[aria-label*="mention"] .iconContainer-21RCa3 .icon-2W8DHg{
   color: white !important;
 }
+.selected-2TbFuo{
+  background-color: rgba(255,255,255,0.15) !important;
+}
 
 /*
 ------------------PLUGIN FIXES BELOW------------------

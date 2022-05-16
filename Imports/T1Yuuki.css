@@ -26,11 +26,11 @@
 }
 
 /* Colored unread channels */
-.mainContent-20q_Hp[aria-label^="unread"] .channelName-3KPsGw{
+.mainContent-20q_Hp[aria-label^="unread"] .channelName-3KPsGw,
+.mainContent-20q_Hp[aria-label^="unread"] .iconContainer-21RCa3 .icon-2W8DHg,
+.mainContent-20q_Hp[aria-label*="mention"] .channelName-3KPsGw,
+.mainContent-20q_Hp[aria-label*="mention"] .iconContainer-21RCa3 .icon-2W8DHg{
   color: white !important;
-}
-.mainContent-20q_Hp[aria-label^="unread"] .channelName-3KPsGw .icon-2W8DHg{
-  fill: white !important;
 }
 
 /*

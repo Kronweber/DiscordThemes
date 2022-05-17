@@ -1,6 +1,6 @@
 /* CSS snippets made by Yuuki#2628 as extra customizations to the T1 theme */
 
-  /* This is an addon that moves the "user is typing" text to the bottom of the app, like the default discord.*/
+/* This is an addon that moves the "user is typing" text to the bottom of the app, like the default discord.*/
 .typing-2J1mQU {
   background: var(--bg-sendmessage);
   position: relative;
@@ -26,11 +26,15 @@
 }
 
 /* Colored unread channels */
-.mainContent-20q_Hp[aria-label^="unread"] .channelName-3KPsGw,
-.mainContent-20q_Hp[aria-label^="unread"] .iconContainer-21RCa3 .icon-2W8DHg,
-.mainContent-20q_Hp[aria-label*="mention"] .channelName-3KPsGw,
-.mainContent-20q_Hp[aria-label*="mention"] .iconContainer-21RCa3 .icon-2W8DHg{
+.containerDefault-YUSmu3 div:not(.modeMuted-2T4MDZ) .content-1gYQeQ .mainContent-20q_Hp[aria-label*="unread"] .channelName-3KPsGw,
+.containerDefault-YUSmu3 div:not(.modeMuted-2T4MDZ) .content-1gYQeQ .mainContent-20q_Hp[aria-label*="unread"] .iconContainer-21RCa3 .icon-2W8DHg,
+.containerDefault-YUSmu3 div:not(.modeMuted-2T4MDZ) .content-1gYQeQ .mainContent-20q_Hp[aria-label*="mention"] .channelName-3KPsGw,
+.containerDefault-YUSmu3 div:not(.modeMuted-2T4MDZ) .content-1gYQeQ .mainContent-20q_Hp[aria-label*="mention"] .iconContainer-21RCa3 .icon-2W8DHg{
   color: white !important;
+}
+.modeMuted-2T4MDZ .content-1gYQeQ .mainContent-20q_Hp .channelName-3KPsGw,
+.modeMuted-2T4MDZ .content-1gYQeQ .mainContent-20q_Hp .iconContainer-21RCa3 .icon-2W8DHg{
+  filter: brightness(75%) !important;
 }
 .selected-2TbFuo{
   background-color: rgba(255,255,255,0.15) !important;

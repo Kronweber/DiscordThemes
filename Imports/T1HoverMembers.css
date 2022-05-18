@@ -1,51 +1,22 @@
-/* A modified version of Purple Wizard's hover members, used in WizardUI */
+/* A custom hover members made by Yuuki */
 
-/* ROLE NAME */
-.chatContent-3KubbW+.container-2o3qEW .membersGroup-2eiWxl {
-    opacity: 0 !important;
-    transition: all 2s ease !important;
+.container-2o3qEW{
+  transition: 0.5s;
+  width: 65px !important;
 }
-
-.chatContent-3KubbW+.container-2o3qEW .membersWrap-3NUR2t:hover .membersGroup-2eiWxl {
-    transition: all 2s ease !important;
-    opacity: 1 !important;
+.container-2o3qEW:hover{
+  transition: 0.5s;
+  width: 240px !important;
 }
-
-/* MOVING THE MEMBERS LIST TO THE RIGHT */
-.chatContent-3KubbW+.container-2o3qEW {
-    width: 70px !important;
-    transition: all 500ms ease !important;
-    -webkit-transition: all 500ms ease !important;
+.container-q97qHp{
+  transition: 0.5s;
+  height: 0px !important;
+  opacity: 0% !important;
+  padding: 0px !important;
 }
-
-.chatContent-3KubbW+.container-2o3qEW:hover {
-    width: 265px !important;
-}
-
-/* MEMBERS LIST CONTENT */
-.chatContent-3KubbW+.container-2o3qEW .members-3WRCEx {
-    width: 265px !important;
-    overflow: hidden !important;
-    flex: 0 1 auto !important;
-}
-
-.chatContent-3KubbW+.container-2o3qEW .membersWrap-3NUR2t:hover {
-    overflow: auto !important;
-}
-
-/* MOVING USER DETAILS */
-.chatContent-3KubbW+.container-2o3qEW .members-3WRCEx .member-2gU6Ar .layout-1qmrhw {
-    padding-left: 12.5px !important;
-}
-
-.chatContent-3KubbW+.container-2o3qEW .members-3WRCEx .member-2gU6Ar .content-1U25dZ {
-    -webkit-transform: translateX(220px) !important;
-    transform: translateX(220px) !important;
-    transition: all 750ms ease !important;
-    -webkit-transition: all 750ms ease !important;
-}
-
-.chatContent-3KubbW+.container-2o3qEW:hover .members-3WRCEx .member-2gU6Ar .content-1U25dZ {
-    -webkit-transform: translateX(0px) !important;
-    transform: translateX(0px) !important;
+.container-2o3qEW:hover .container-q97qHp{
+  transition: 0.5s;
+  height: 40px !important;
+  opacity: 100% !important;
+  padding: 24px 8px 0px 16px !important;
 }

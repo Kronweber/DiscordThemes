@@ -66,12 +66,13 @@
 .UserDetails-connections-connections,
 .UserDetails-mutualServers-guilds,
 .UserDetails-mutualFriends-friends{
-  height: 38px !important;
+  height: 48px !important;
   width: auto;
   display: flex;
-  flex-wrap: nowrap;
-  overflow-x: hidden;
-  overflow-y: scroll;
+  align-items: flex-start;
+  flex-wrap: nowrap !important;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 .UserDetails-mutualFriends-friends .UserDetails-mutualFriends-mutualFriend,
 .UserDetails-mutualServers-guilds .UserDetails-mutualServers-mutualGuild,
@@ -79,11 +80,12 @@
 .UserDetails-mutualFriends-friends .UserDetails-mutualFriends-mutualFriend img,
 .UserDetails-mutualServers-guilds .UserDetails-mutualServers-mutualGuild img,
 .UserDetails-connections-connections .UserDetails-badge-connection img{
+  flex: none;
   width: 33px !important;
   height: 33px !important;
 }
 .activityUserPopout-2MzGCj{
-  margin-top: 40px !important;
+  margin-top: 80px !important;
   padding: 0% !important;
 }
 .customStatus-3XAoF9{
@@ -105,7 +107,7 @@
 .UserDetails-mutualServers-guilds::-webkit-scrollbar,
 .UserDetails-mutualFriends-friends::-webkit-scrollbar,
 .rolesList-3uZoaa::-webkit-scrollbar{
-  width: 12px !important;
+  height: 12px !important;
 }
 .UserDetails-connections-connections::-webkit-scrollbar-thumb,
 .UserDetails-mutualServers-guilds::-webkit-scrollbar-thumb,
@@ -116,7 +118,7 @@
   border: 4px solid transparent !important;
   background-clip: padding-box !important;
   border-radius: 8px !important;
-  min-height: 25px;
+  min-width: 25px;
 }
 .UserDetails-connections-connections::-webkit-scrollbar-track,
 .UserDetails-mutualServers-guilds::-webkit-scrollbar-track,

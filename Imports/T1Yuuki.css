@@ -139,6 +139,23 @@
   background-color: rgba(0,0,0,0) !important;
   border: none !important;
 }
+.UserDetails-dates-wrapper{
+  display: block;
+  position: relative !important;
+  top: -150px !important;
+  left: 140px !important;
+  width: 300px !important;
+}
+.root-8LYsGj .topSection-13QKHs .avatar-3QF_VA .svg-2azL_l rect{
+  x: 100 !important;
+  y: 100 !important;
+}
+.root-8LYsGj header{
+  height: 140px !important;
+}
+.body-1Ukv50{
+  height: 340px !important;
+}
 
 /* Better invites */
 .wrapper-1HIH0j{

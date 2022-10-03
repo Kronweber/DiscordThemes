@@ -65,14 +65,16 @@
   /* min-height: 34px; */
 }
 .topSection-13QKHs .tabBarContainer-sCZC4w .tabBar-2hXqzU{
-  margin-top: 40px;
+  margin-top: 40px !important;
 }
 .bannerSVGWrapper-qc0szY .nameTag-H6kSJ0 {
-  left: 100px;
-  top: -50px;
+  position: relative !important;
+  left: 100px !important;
+  top: -50px !important;
 }
 .username-3JLfHz .discriminator-1bqsd3{
-  left: auto;
+  position: relative !important;
+  left: auto !important;
 }
 .UserDetails-connections-connections,
 .UserDetails-mutualServers-guilds,

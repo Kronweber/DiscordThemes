@@ -106,6 +106,12 @@
 .userInfoSection-3her-v{
   display: none !important;
 }
+.userPopout-2j1gM4 .bodyInnerWrapper-2bQs1k{
+  grid-template-rows: 32px auto 24px 0px !important;
+}
+.userPopout-2j1gM4 .bodyInnerWrapper-2bQs1k .userInfoSection-3her-v~.activity-1gTu-L{
+  margin-top: 0px !important;
+}
 .bodyTitle-2Az3VQ, .rolesList-3uZoaa, .note-Go5ZP2{
   position: relative !important;
   height: 115px !important;

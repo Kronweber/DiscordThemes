@@ -64,9 +64,6 @@
   height: auto !important;
   /* min-height: 34px; */
 }
-.topSection-13QKHs .tabBarContainer-sCZC4w .tabBar-2hXqzU{
-  margin-top: 40px !important;
-}
 .root-8LYsGj.root-g14mjS .nameTag-2Nlmsy {
   margin-left: 160px !important;
   margin-top: 20px !important;
@@ -167,7 +164,7 @@
   y: 100 !important;
 }
 .root-8LYsGj header{
-  height: 140px !important;
+  height: fit-content !important;
 }
 .body-1Ukv50{
   height: 340px !important;

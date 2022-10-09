@@ -47,6 +47,7 @@
 /* UserDetails user popup */
 .bodyInnerWrapper-2bQs1k{
   margin-top: 110px !important;
+  margin-bottom: -110px !important;
 }
 .nickname-t08Mck{
   margin-top: 10px !important;
@@ -111,7 +112,7 @@
 }
 .bodyTitle-2Az3VQ, .rolesList-3uZoaa, .note-Go5ZP2{
   position: relative !important;
-  height: 115px !important;
+  /*height: 115px !important;*/
   top: -115px !important;
 }
 .rolesList-3uZoaa{

@@ -109,6 +109,8 @@
 }
 .userPopout-2j1gM4 .bodyInnerWrapper-2bQs1k .userInfoSection-3her-v~.activity-1gTu-L{
   margin-top: 0px !important;
+  position: relative;
+  top: -125px;
 }
 .bodyTitle-2Az3VQ, .rolesList-3uZoaa, .note-Go5ZP2{
   position: relative !important;

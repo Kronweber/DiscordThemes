@@ -46,6 +46,7 @@
     --background-mentioned: rgba(250, 166, 26, 0.1);
     --background-mentioned-hover: rgba(250, 166, 26, 0.08);
     --background-message-hover: rgba(4, 4, 5, 0.07);
+    --upload-area-background: rgba(79, 84, 92, 0);
     --info-positive-text: #fff;
     --info-warning-text: #fff;
     --info-danger-text: #fff;
@@ -616,7 +617,7 @@ body {
     left: 0;
     right: 0;
     height: 100%;
-    background: var(--background-modifier-hover);
+    background: var(--upload-area-background);
     z-index: -1;
 }
 .form-3gdLxP .channelAttachmentArea-HwpkuQ .upload-vLbqu- {

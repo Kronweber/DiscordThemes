@@ -47,6 +47,10 @@
 .containerDefault-YUSmu3:hover{
   background-color:rgba(255,255,255,0.15);
 }
+.chatContent-3KubbW .message-2CShn3.cozy-VmLDNB.replying-eZ7p5z .contents-2MsGLg{
+  background: none;
+  background-color: rgba(255,255,255,0.08);
+}
 
 /*
 ------------------PLUGIN FIXES BELOW------------------

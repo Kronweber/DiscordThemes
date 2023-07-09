@@ -25,7 +25,7 @@
   display: none;
 }
 
-/* Colored unread channels */
+/* Colored unread channels
 .containerDefault-YUSmu3 div:not(.modeMuted-2T4MDZ) .content-1gYQeQ .mainContent-20q_Hp[aria-label*="unread"] .channelName-3KPsGw,
 .containerDefault-YUSmu3 div:not(.modeMuted-2T4MDZ) .content-1gYQeQ .mainContent-20q_Hp[aria-label*="unread"] .iconContainer-21RCa3 .icon-2W8DHg,
 .containerDefault-YUSmu3 div:not(.modeMuted-2T4MDZ) .content-1gYQeQ .mainContent-20q_Hp[aria-label*="mention"] .channelName-3KPsGw,
@@ -38,6 +38,14 @@
 }
 .selected-2TbFuo{
   background-color: rgba(255,255,255,0.15) !important;
+} */
+
+/* Hover effect on messages and channels */
+.messageListItem-ZZ7v6g:hover{
+  background-color:rgba(255,255,255,0.1);
+}
+.containerDefault-YUSmu3:hover{
+  background-color:rgba(255,255,255,0.15);
 }
 
 /*

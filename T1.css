@@ -633,7 +633,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: var(--background-modifier-hover);
+    /* background: var(--background-modifier-hover); */
     z-index: -1;
 }
 .form-3gdLxP .channelAttachmentArea-HwpkuQ .upload-vLbqu- .actionBar-1ozugS {

@@ -8,7 +8,8 @@
  * @source https://github.com/Eight-P/BD.8P/tree/master/Themes/T1
 */
 
-@import url(https://rawcdn.githack.com/Yuuki2628/DiscordThemes/d8570f724853addb1dbc89db1838cfa85ff0c0e5/T1.css);
+/*import url(https://eight-p.github.io/BD.8P/Themes/T1/imports/T1.main.css);*/
+/* Customized version import */@import url(https://rawcdn.githack.com/Yuuki2628/DiscordThemes/1a2a954f678d555b042574083bdb07e0f775c9c6/T1.css);
 /* Yuuki's additions */ @import url(https://rawcdn.githack.com/Yuuki2628/DiscordThemes/ea4dde561b03f39b5123258b8f73a71fbe164c64/Imports/T1Yuuki.css); /* */
 /* Hover members list */ @import url(https://rawcdn.githack.com/Yuuki2628/DiscordThemes/09eea713b38a1c6b794b897bd3754dde70e982a1/Imports/T1HoverMembers.css); /* */
 

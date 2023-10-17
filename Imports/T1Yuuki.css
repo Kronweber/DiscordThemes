@@ -13,7 +13,7 @@
 .chat-2ZfjoI [class*=channelTextAreaDisabled] .textArea-2CLwUE>.placeholder-1_mJY1:after {
   content: "You do not have permission to send messages in this channel.";
 }
-.form-3gdLxP{
+.form-3qe0Ni{
   display: flex;
   flex-wrap: wrap;
   flex-direction: column-reverse;
@@ -25,19 +25,15 @@
   display: none;
 }
 
-/* Colored unread channels
-.containerDefault-YUSmu3 div:not(.modeMuted-2T4MDZ) .content-1gYQeQ .mainContent-20q_Hp[aria-label*="unread"] .channelName-3KPsGw,
-.containerDefault-YUSmu3 div:not(.modeMuted-2T4MDZ) .content-1gYQeQ .mainContent-20q_Hp[aria-label*="unread"] .iconContainer-21RCa3 .icon-2W8DHg,
-.containerDefault-YUSmu3 div:not(.modeMuted-2T4MDZ) .content-1gYQeQ .mainContent-20q_Hp[aria-label*="mention"] .channelName-3KPsGw,
-.containerDefault-YUSmu3 div:not(.modeMuted-2T4MDZ) .content-1gYQeQ .mainContent-20q_Hp[aria-label*="mention"] .iconContainer-21RCa3 .icon-2W8DHg{
+/* Colored unread channels */
+.containerDefault-YUSmu3 div:is(.modeUnread-3Cxepe) .linkTop-1W1aK6 .name-28HaxV{
   color: white !important;
 }
-.modeMuted-2T4MDZ .content-1gYQeQ .mainContent-20q_Hp .channelName-3KPsGw,
-.modeMuted-2T4MDZ .content-1gYQeQ .mainContent-20q_Hp .iconContainer-21RCa3 .icon-2W8DHg{
-  filter: brightness(75%) !important;
-} */
+.containerDefault-YUSmu3 div:is(.modeMuted-2T4MDZ) .linkTop-1W1aK6 .name-28HaxV{
+  color: var(--interactive-muted);
+}
 .selected-2TbFuo{
-  background-color: rgba(255,255,255,0.15) !important;
+background-color: rgba(255,255,255,0.15) !important;
 }
 
 /* Hover effect on messages and channels */
@@ -47,153 +43,7 @@
 .containerDefault-YUSmu3:hover{
   background-color:rgba(255,255,255,0.15);
 }
-.chatContent-3KubbW .message-2CShn3.cozy-VmLDNB.replying-eZ7p5z .contents-2MsGLg{
-  background: none;
-  background-color: rgba(255,255,255,0.08);
-}
-.form-3gdLxP:has(.channelTextArea-1FufC0:has(.channelAttachmentArea-HwpkuQ)){
-  background-color: rgba(0,0,0,0.6);
-}
 
 /*
 ------------------PLUGIN FIXES BELOW------------------
 */
-
-/* UserDetails user popup */
-.bodyInnerWrapper-2bQs1k{
-  margin-top: 110px !important;
-  margin-bottom: -110px !important;
-}
-.nickname-t08Mck{
-  margin-top: 10px !important;
-}
-.activityUserPopout-2MzGCj{
-  margin-top: 0 !important;
-}
-.UserDetails-mutualServers-body, 
-.UserDetails-connections-connectionsBody, 
-.UserDetails-mutualFriends-body,
-.UserDetails-mutualFriends-header{
-  position: relative !important;
-  margin-top: auto !important;
-  top: auto !important;
-  height: auto !important;
-  /* min-height: 34px; */
-}
-.root-8LYsGj.root-g14mjS .nameTag-2Nlmsy {
-  margin-left: 160px !important;
-  margin-top: 20px !important;
-}
-.root-8LYsGj.root-g14mjS .headerTop-1PNKck {
-  left: auto !important;
-}
-.UserDetails-connections-connections,
-.UserDetails-mutualServers-guilds,
-.UserDetails-mutualFriends-friends{
-  height: 48px !important;
-  width: auto;
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: nowrap !important;
-  overflow-x: scroll;
-  overflow-y: hidden;
-}
-.UserDetails-mutualFriends-friends .UserDetails-mutualFriends-mutualFriend,
-.UserDetails-mutualServers-guilds .UserDetails-mutualServers-mutualGuild,
-.UserDetails-connections-connections .UserDetails-badge-connection,
-.UserDetails-mutualFriends-friends .UserDetails-mutualFriends-mutualFriend img,
-.UserDetails-mutualServers-guilds .UserDetails-mutualServers-mutualGuild img,
-.UserDetails-connections-connections .UserDetails-badge-connection img{
-  flex: none;
-  width: 33px !important;
-  height: 33px !important;
-}
-.activityUserPopout-2MzGCj{
-  margin-top: 80px !important;
-  padding: 0% !important;
-}
-.customStatus-3XAoF9{
-  margin: auto !important;
-}
-.customStatus-3XAoF9,
-.userInfoSection-3her-v{
-  display: none !important;
-}
-.userPopout-2j1gM4 .bodyInnerWrapper-2bQs1k{
-  grid-template-rows: 32px auto 24px 0px !important;
-}
-.userPopout-2j1gM4 .bodyInnerWrapper-2bQs1k .userInfoSection-3her-v~.activity-1gTu-L{
-  margin-top: 0px !important;
-  position: relative;
-  top: -125px;
-}
-.bodyTitle-2Az3VQ, .rolesList-3uZoaa, .note-Go5ZP2{
-  position: relative !important;
-  /*height: 115px !important;*/
-  top: -115px !important;
-}
-.rolesList-3uZoaa{
-  overflow: auto !important;
-}
-.UserDetails-connections-connections::-webkit-scrollbar,
-.UserDetails-mutualServers-guilds::-webkit-scrollbar,
-.UserDetails-mutualFriends-friends::-webkit-scrollbar,
-.rolesList-3uZoaa::-webkit-scrollbar{
-  height: 12px !important;
-  width: 12px !important;
-}
-.UserDetails-connections-connections::-webkit-scrollbar-thumb,
-.UserDetails-mutualServers-guilds::-webkit-scrollbar-thumb,
-.UserDetails-mutualFriends-friends::-webkit-scrollbar-thumb,
-.rolesList-3uZoaa::-webkit-scrollbar-thumb{
-  background-color: var(--interactive-normal) !important;
-  border-color: rgba(0,0,0,0) !important;
-  border: 4px solid transparent !important;
-  background-clip: padding-box !important;
-  border-radius: 8px !important;
-  min-width: 25px !important;
-}
-.UserDetails-connections-connections::-webkit-scrollbar-track,
-.UserDetails-mutualServers-guilds::-webkit-scrollbar-track,
-.UserDetails-mutualFriends-friends::-webkit-scrollbar-track,
-.rolesList-3uZoaa::-webkit-scrollbar-track{
-  background-color: rgba(0,0,0,0) !important;
-  border-color: rgba(0,0,0,0) !important;
-  border: 4px solid transparent !important;
-  background-clip: padding-box !important;
-  border-radius: 8px !important;
-}
-.UserDetails-connections-connections::-webkit-scrollbar-track-piece,
-.UserDetails-mutualServers-guilds::-webkit-scrollbar-track-piece,
-.UserDetails-mutualFriends-friends::-webkit-scrollbar-track-piece,
-.rolesList-3uZoaa::-webkit-scrollbar-track-piece{
-  background-color: rgba(0,0,0,0) !important;
-  border: none !important;
-}
-.UserDetails-dates-wrapper{
-  display: block;
-  position: relative !important;
-  top: -150px !important;
-  left: 140px !important;
-  width: 300px !important;
-}
-.root-8LYsGj .topSection-13QKHs .avatar-3QF_VA .svg-2azL_l rect{
-  x: 100 !important;
-  y: 100 !important;
-}
-.root-8LYsGj header{
-  height: fit-content !important;
-}
-.body-1Ukv50{
-  height: 340px !important;
-}
-.customStatusActivity-WKWGD-{
-  padding: 16px 16px 0px !important;
-}
-/* Better invites */
-.wrapper-1HIH0j{
-  width: 432px !important;
-}
-.lookFilled-yCfaCM.colorGreen-3y-Z79{
-  background-color: var(--Primary) !important;
-}

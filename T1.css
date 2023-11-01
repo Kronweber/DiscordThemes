@@ -766,7 +766,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: var(--background-modifier-hover);
+    background: var(--upload-area-background);
     z-index: -1;
 }
 .form__13a2c .channelAttachmentArea__740bf .upload_c98ecb .actionBar__3cdab {

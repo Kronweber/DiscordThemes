@@ -1,20 +1,20 @@
 /* A custom hover members made by Yuuki */
 
-.container-2vWgD2{
+.container_b2ce9c{
   transition: 0.5s;
   width: 60px !important;
 }
-.container-2vWgD2:hover{
+.container_b2ce9c:hover{
   transition: 0.5s;
   width: 240px !important;
 }
-.membersGroup-2YoqY- {
+.membersGroup__85843 {
   transition: 0.5s;
   height: 0px !important;
   opacity: 0% !important;
   padding: 0px !important;
 }
-.container-2vWgD2:hover .membersGroup-2YoqY-{
+.container_b2ce9c:hover .membersGroup__85843{
   transition: 0.5s;
   height: 40px !important;
   opacity: 100% !important;

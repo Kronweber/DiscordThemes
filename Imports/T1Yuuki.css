@@ -1,7 +1,7 @@
 /* CSS snippets made by Yuuki#2628 as extra customizations to the T1 theme */
 
 /* This is an addon that moves the "user is typing" text to the bottom of the app, like the default discord.*/
-.typing-2J1mQU {
+.typing__6fd1d {
   background: var(--bg-sendmessage);
   position: relative;
   margin-bottom: -25px;
@@ -10,10 +10,10 @@
 [class*=channelTextAreaDisabled] {
   display: none;
 }
-.chat-2ZfjoI [class*=channelTextAreaDisabled] .textArea-2CLwUE>.placeholder-1_mJY1:after {
+.chat__52833 [class*=channelTextAreaDisabled] .textArea__74543>.placeholder__4bea5:after {
   content: "You do not have permission to send messages in this channel.";
 }
-.form-3qe0Ni{
+.form__13a2c{
   display: flex;
   flex-wrap: wrap;
   flex-direction: column-reverse;
@@ -26,21 +26,21 @@
 }
 
 /* Colored unread channels */
-.containerDefault-YUSmu3 div:is(.modeUnread-3Cxepe) .linkTop-1W1aK6 .name-28HaxV{
+.containerDefault__3187b div:is(.modeUnread_f74c03) .linkTop_eaa673 .name__8d1ec{
   color: white !important;
 }
-.containerDefault-YUSmu3 div:is(.modeMuted-2T4MDZ) .linkTop-1W1aK6 .name-28HaxV{
+.containerDefault__3187b div:is(.modeMuted__0aeea) .linkTop_eaa673 .name__8d1ec{
   color: var(--interactive-muted);
 }
-.selected-2TbFuo{
+.selected__3b4cb{
 background-color: rgba(255,255,255,0.15) !important;
 }
 
 /* Hover effect on messages and channels */
-.messageListItem-ZZ7v6g:hover{
+.messageListItem__6a4fb:hover{
   background-color:rgba(255,255,255,0.065);
 }
-.containerDefault-YUSmu3:hover{
+.containerDefault__3187b:hover{
   background-color:rgba(255,255,255,0.15);
 }
 

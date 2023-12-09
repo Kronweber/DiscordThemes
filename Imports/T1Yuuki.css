@@ -26,7 +26,7 @@
 }
 
 /* Colored unread channels */
-.container__590e2 .wrapper__7bcde .name__8d1ec{
+.containerDefault__3187b div:is(.modeUnreadImportant_efb53e) .linkTop_eaa673 .name__8d1ec{
   color: white !important;
 }
 .containerDefault__3187b div:is(.modeMuted__0aeea) .linkTop_eaa673 .name__8d1ec{

@@ -21,26 +21,26 @@
 }
 
 /* Hide the account change notification */
-.toast-q3Y4wI{
+.containerTop__48d9b {
   display: none;
 }
 
 /* Colored unread channels */
-.containerDefault__3187b div:is(.modeUnreadImportant_efb53e) .linkTop_eaa673 .name__8d1ec{
+.containerDefault_ae2ea4 div:is(.modeUnreadImportant__35358) .linkTop_c8969d .name__4eb92 {
   color: white !important;
 }
-.containerDefault__3187b div:is(.modeMuted__0aeea) .linkTop_eaa673 .name__8d1ec{
+.containerDefault_ae2ea4 div:is(.modeMuted_f0a72e) .linkTop_c8969d .name__4eb92 {
   color: var(--interactive-muted);
 }
-.selected__3b4cb{
+.selected__11b62 {
 background-color: rgba(255,255,255,0.15) !important;
 }
 
 /* Hover effect on messages and channels */
-.messageListItem__6a4fb:hover{
+.messageListItem__050f9:hover{
   background-color:rgba(255,255,255,0.065);
 }
-.containerDefault__3187b:hover{
+.containerDefault_ae2ea4:hover{
   background-color:rgba(255,255,255,0.15);
 }
 

@@ -8,17 +8,11 @@
  * @source https://github.com/Eight-P/BD.8P/tree/master/Themes/T1
 */
 
-/* T1 */
-@import url(https://eight-p.github.io/BD.8P/Themes/T1/imports/T1.main.css);
-
-
-/* Original import                  @import url(https://eight-p.github.io/BD.8P/Themes/T1/imports/T1.main.css); /* */
+/* T1                            */ @import url(https://eight-p.github.io/BD.8P/Themes/T1/imports/T1.main.css);
 /* Icon Revert 2023 by davart154 */ @import url(https://davart154.github.io/Themes/Icon%20Revert%202023/2023%20Icon%20Revert.css);
-/* Yuuki's additions                @import url(https://rawcdn.githack.com/Yuuki2628/DiscordThemes/098d2d914303f5219836f755b988457b9939780b/Imports/T1Yuuki.css); /* */
-/* Hover members list               @import url(https://rawcdn.githack.com/Yuuki2628/DiscordThemes/098d2d914303f5219836f755b988457b9939780b/Imports/T1HoverMembers.css); /* */
 
 :root {
-/*  ==> IMPORTANT <== 
+  /*  ==> IMPORTANT <== 
 
     - The Theme might not work properly when mixed with others.
 
@@ -37,26 +31,26 @@
     - Blur effect: 0 = off | higher number = more blur
     - Chat buttons: 1 = show | 0 = hidden
     */
-  
-    --Main_Background: url(https://eight-p.github.io/BD.8P/Themes/T1/imports/Main-bg.jpg);
-    --Main_Brightness: 80 ;
-    --Main_Background_blur: 0 ;
-    
-    --Server_Background: url(https://eight-p.github.io/BD.8P/Themes/T1/imports/Server-bg.jpg);
-    --Server_Brightness: 100 ;
-    --Server_Background_blur: 0 ;
-  
-    --show-nitro-btn: 0 ;
-    --show-gif-btn: 1 ;
-    --show-sticker-btn: 1 ;
-    --show-emoji-btn: 1 ;
 
-    --show-home-tabs: 1 ; 
-    --show-serverboost-stats: 1 ; 
+  --Main_Background: url(https://eight-p.github.io/BD.8P/Themes/T1/imports/Main-bg.jpg);
+  --Main_Brightness: 80;
+  --Main_Background_blur: 0;
 
-    /* Button overlay in call view (1 = always show | 0 = only show on hover) */
-    --always-show-voicecontrols: 0 ; 
+  --Server_Background: url(https://eight-p.github.io/BD.8P/Themes/T1/imports/Server-bg.jpg);
+  --Server_Brightness: 100;
+  --Server_Background_blur: 0;
 
-    /* Main font (prioritization: left to right) */
-    --Font: "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif ;
+  --show-nitro-btn: 0;
+  --show-gif-btn: 1;
+  --show-sticker-btn: 1;
+  --show-emoji-btn: 1;
+
+  --show-home-tabs: 1;
+  --show-serverboost-stats: 1;
+
+  /* Button overlay in call view (1 = always show | 0 = only show on hover) */
+  --always-show-voicecontrols: 0;
+
+  /* Main font (prioritization: left to right) */
+  --Font: "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }

@@ -2,17 +2,21 @@
 
 /* This is an addon that moves the "user is typing" text to the bottom of the app, like the default discord.*/
 .typing_d7ebeb {
-  background: rgba(0, 0, 0, 0.65);;
+  background: rgba(0, 0, 0, 0.65);
+  ;
   position: relative;
   margin-bottom: -25px;
   left: 48px;
 }
+
 [class*=channelTextAreaDisabled] {
   display: none;
 }
-.chat_a7d72e [class*=channelTextAreaDisabled] .textArea_d0696b > .placeholder_a552a6:after {
+
+.chat_a7d72e [class*=channelTextAreaDisabled] .textArea_d0696b>.placeholder_a552a6:after {
   content: "You do not have permission to send messages in this channel.";
 }
+
 .form_a7d72e {
   display: flex;
   flex-wrap: wrap;
@@ -29,19 +33,27 @@
 .containerDefault_f6f816 div:is(.modeUnreadImportant_d8bfb3) .linkTop_d8bfb3 .name_d8bfb3 {
   color: white !important;
 }
+
 .containerDefault_f6f816 div:is(.modeMuted_d8bfb3) .linkTop_d8bfb3 .name_d8bfb3 {
   color: var(--interactive-muted);
 }
+
 .modeSelected_d8bfb3 {
-background-color: rgba(255,255,255,0.15) !important;
+  background-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+/* Undread message fix for weird screen size */
+.unread_d8bfb3 {
+  padding-left: 5px
 }
 
 /* Hover effect on messages and channels */
-.messageListItem_d5deea:hover{
-  background-color:rgba(255,255,255,0.065);
+.messageListItem_d5deea:hover {
+  background-color: rgba(255, 255, 255, 0.065);
 }
-.containerDefault_f6f816:hover{
-  background-color:rgba(255,255,255,0.15);
+
+.containerDefault_f6f816:hover {
+  background-color: rgba(255, 255, 255, 0.15);
 }
 
 /*

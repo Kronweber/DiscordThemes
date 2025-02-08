@@ -1,58 +1,17 @@
 /* CSS snippets made by Yuuki#2628 as extra customizations to the T1 theme */
 
-/* This is an addon that moves the "user is typing" text to the bottom of the app, like the default discord.*/
-.typing_b88801 {
-  background: rgba(0, 0, 0, 0.65);
-  top: -20px;
-  left: 0;
-  right: 12px;
-}
-
 [class*=channelTextAreaDisabled] {
   display: none;
 }
-
-/* .chat_f75fb0 [class*=channelTextAreaDisabled] .textArea__74017>.placeholder__1b31f :after {
-  content: "You do not have permission to send messages in this channel.";
-}
-
-.form_f75fb0 {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column-reverse;
-  width: 100% !important;
-} */
 
 /* Hide the account change notification */
 .containerTop__45edc {
   display: none;
 }
 
-/* Colored unread channels */
-.containerDefault_c69b6d div:is(.modeUnreadImportant__2ea32) .linkTop__2ea32 .name__2ea32 {
-  color: white !important;
-}
-
-.containerDefault_c69b6d div:is(.modeMuted__2ea32) .linkTop__2ea32 .name__2ea32 {
-  color: var(--interactive-muted);
-}
-
-.modeSelected__2ea32 {
-  background-color: rgba(255, 255, 255, 0.15) !important;
-}
-
-/* Undread message fix for weird screen size */
-.unread__3b95d {
-  padding-left: 5px
-}
-
-/* Hover effect on messages and channels */
-.messageListItem__5126c:hover {
-  background-color: rgba(255, 255, 255, 0.065);
-}
-
-.containerDefault_c69b6d:hover {
-  background-color: rgba(255, 255, 255, 0.15);
+/* Fix typing font size */
+.text_b88801 {
+  font-size: 14px;
 }
 
 /*

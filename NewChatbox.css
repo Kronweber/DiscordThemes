@@ -29,7 +29,6 @@
 .textArea__74017 {
   grid-column: 1 / span 4;
   grid-row: 1;
-  border-bottom: 1px solid gray;
 }
 
 .buttons__74017 {
@@ -37,4 +36,15 @@
   grid-row: 2;
   justify-content: flex-end;
   padding-right: 8px;
+}
+
+.uploadInput__0923f,
+.attachWrapper__0923f,
+.buttons__74017 {
+  position: sticky;
+  bottom: 0;
+  background: var(--background-primary);
+  border-top: 1px solid gray;
+  z-index: 10;
+  height: 50px;
 }

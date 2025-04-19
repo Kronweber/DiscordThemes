@@ -1,0 +1,40 @@
+.scrollableContainer__74017 {
+    overflow-y: unset;
+}
+.inner__74017 {
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  grid-template-rows: auto 50px;
+  gap: 0px;
+  align-items: center;
+  padding-left: 0px;
+}
+
+.uploadInput__0923f {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.attachWrapper__0923f {
+  grid-column: 2;
+  grid-row: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.attachWrapper__0923f > button:nth-child(1) {
+    margin-left: 0px !important;
+}
+
+.textArea__74017 {
+  grid-column: 1 / span 4;
+  grid-row: 1;
+  border-bottom: 1px solid gray;
+}
+
+.buttons__74017 {
+  grid-column: 3;
+  grid-row: 2;
+  justify-content: flex-end;
+  padding-right: 8px;
+}

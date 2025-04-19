@@ -1,5 +1,5 @@
 .scrollableContainer__74017 {
-    overflow-y: unset;
+  overflow-y: unset;
 }
 .inner__74017 {
   display: grid;
@@ -23,7 +23,7 @@
   align-items: center;
 }
 .attachWrapper__0923f > button:nth-child(1) {
-    margin-left: 0px !important;
+  margin-left: 0px !important;
 }
 
 .textArea__74017 {
@@ -43,7 +43,7 @@
 .buttons__74017 {
   position: sticky;
   bottom: 0;
-  background: var(--background-primary);
+  background: var(--bg-overlay-floating,var(--chat-background-default));
   border-top: 1px solid gray;
   z-index: 10;
   height: 50px;

@@ -10,7 +10,9 @@
   width: 265px !important;
 }
 
-.membersGroup_c8ffbb {
+.membersGroup_c8ffbb,
+.vc-membercount-widget,
+.vc-membercount-member-list {
   transition: 0.5s;
   height: 0px !important;
   opacity: 0% !important;
@@ -22,4 +24,12 @@
   height: 40px !important;
   opacity: 100% !important;
   padding: 24px 8px 0px 16px !important;
+}
+
+.container_c8ffbb:hover .vc-membercount-widget,
+.container_c8ffbb:hover .vc-membercount-member-list {
+  transition: 0.5s;
+  height: 8px !important;
+  opacity: 100% !important;
+
 }

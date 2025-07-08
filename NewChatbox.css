@@ -1,65 +1,82 @@
-.scrollableContainer__74017 {
+/* 
+
+bioTextArea__6a919 scrollableContainer__74017 themedBackground__74017
+
+Regular text box
+inner__74017 sansAttachButton__74017
+
+Forward text box
+inner__74017 sansAttachButtonCreatePost__74017
+
+Bio text box
+inner__74017 */
+
+.scrollableContainer__74017:not(.bioTextArea__6a919):not(.messageInput__62280 ) {
     overflow-y: hidden;
 }
 
-.inner__74017 {
+.inner__74017.sansAttachButton__74017 {
   display: grid;
   grid-template-columns: auto auto 1fr;
-  grid-template-rows: auto auto;
+  grid-template-rows: auto 51px;
   gap: 0px;
   align-items: center;
   padding-left: 0px;
 }
 
-.uploadInput__0923f {
+.inner__74017.sansAttachButton__74017 > .uploadInput__0923f {
   grid-column: 1;
   grid-row: 2;
 }
 
-.attachWrapper__0923f {
+.inner__74017.sansAttachButton__74017 > .attachWrapper__0923f {
   grid-column: 2;
   grid-row: 2;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.attachWrapper__0923f > button:nth-child(1) {
+.inner__74017.sansAttachButton__74017 > .attachWrapper__0923f > .attachButton__74017 {
   margin-left: 0px !important;
 }
 
-.textArea__74017 {
+.inner__74017.sansAttachButton__74017 > .textArea__74017 {
   grid-column: 1 / span 4;
   grid-row: 1;
   max-height: calc(var(--custom-channel-textarea-text-area-max-height) - 51px);
   overflow-y: auto;
+  padding-left: 10px;
 }
-.textArea__74017::-webkit-scrollbar {
+.inner__74017.sansAttachButton__74017 > .textArea__74017 > div > .placeholder__1b31f{
+  padding-left: 10px;
+}
+.inner__74017.sansAttachButton__74017 > .textArea__74017::-webkit-scrollbar {
   height: 12px;
   width: 12px;
 }
-.textArea__74017::-webkit-scrollbar-thumb {
+.inner__74017.sansAttachButton__74017 > .textArea__74017::-webkit-scrollbar-thumb {
   background-color: hsl(var(--primary-800-hsl) /.6);
   border-radius: 8px;
 }
-.textArea__74017::-webkit-scrollbar-track {
+.inner__74017.sansAttachButton__74017 > .textArea__74017::-webkit-scrollbar-track {
   border-width: initial;
 }
-.textArea__74017::-webkit-scrollbar-thumb,
-.textArea__74017::-webkit-scrollbar-track {
+.inner__74017.sansAttachButton__74017 > .textArea__74017::-webkit-scrollbar-thumb,
+.inner__74017.sansAttachButton__74017 > .textArea__74017::-webkit-scrollbar-track {
   background-clip: padding-box;
   border: 4px solid transparent;
 }
 
-.buttons__74017 {
+.inner__74017.sansAttachButton__74017 > .buttons__74017 {
   grid-column: 3;
   grid-row: 2;
   justify-content: flex-end;
   padding-right: 8px;
 }
 
-.uploadInput__0923f,
-.attachWrapper__0923f,
-.buttons__74017 {
+.inner__74017.sansAttachButton__74017 > .uploadInput__0923f,
+.inner__74017.sansAttachButton__74017 > .attachWrapper__0923f,
+.inner__74017.sansAttachButton__74017 > .buttons__74017 {
   position: sticky;
   bottom: 0;
   background: var(--bg-overlay-floating,var(--chat-background-default));

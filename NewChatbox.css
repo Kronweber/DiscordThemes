@@ -1,9 +1,5 @@
 /* A custom chatbox made by Kronweber */
 
-.scrollableContainer__74017 :not(.bioTextArea__6a919 ):not(.messageInput__62280 ) {
-    overflow-y: hidden;
-}
-
 .inner__74017.sansAttachButton__74017 {
   display: grid;
   grid-template-columns: auto auto 1fr;

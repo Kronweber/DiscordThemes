@@ -1,10 +1,10 @@
-/* A custom hover members made by Kronweber */
+/* A custom chatbox made by Kronweber */
 
-._740174f3d6a2c8fe-scrollableContainer:not(._6a919231d4bdfd4f-bioTextArea):not(._622804cc784b0571-messageInput ) {
+.scrollableContainer__74017 :not(.bioTextArea__6a919 ):not(.messageInput__62280 ) {
     overflow-y: hidden;
 }
 
-._740174f3d6a2c8fe-inner._740174f3d6a2c8fe-sansAttachButton {
+.inner__74017 .sansAttachButton__74017 {
   display: grid;
   grid-template-columns: auto auto 1fr;
   grid-template-rows: auto 51px;
@@ -13,59 +13,59 @@
   padding-left: 0px;
 }
 
-._740174f3d6a2c8fe-inner._740174f3d6a2c8fe-sansAttachButton > ._0923f156a0410684-uploadInput {
+.inner__74017.sansAttachButton__74017 > .uploadInput__0923f {
   grid-column: 1;
   grid-row: 2;
 }
 
-._740174f3d6a2c8fe-inner._740174f3d6a2c8fe-sansAttachButton > ._0923f156a0410684-attachWrapper {
+.inner__74017.sansAttachButton__74017 > .attachWrapper__0923f {
   grid-column: 2;
   grid-row: 2;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-._740174f3d6a2c8fe-inner._740174f3d6a2c8fe-sansAttachButton > ._0923f156a0410684-attachWrapper > ._0923f156a0410684-attachButton {
+.inner__74017.sansAttachButton__74017 > .attachWrapper__0923f > .attachButton__0923f {
   margin-left: 0px !important;
 }
 
-._740174f3d6a2c8fe-inner._740174f3d6a2c8fe-sansAttachButton > ._740174f3d6a2c8fe-textArea {
+.inner__74017.sansAttachButton__74017 > .textArea__74017 {
   grid-column: 1 / span 4;
   grid-row: 1;
   max-height: calc(var(--custom-channel-textarea-text-area-max-height) - 51px);
   overflow-y: auto;
   padding-left: 10px;
 }
-._740174f3d6a2c8fe-inner._740174f3d6a2c8fe-sansAttachButton > ._740174f3d6a2c8fe-textArea > div > ._1b31f471f0bb10ab-placeholder{
+.inner__74017.sansAttachButton__74017 > .textArea__74017 > div > .placeholder__1b31f{
   padding-left: 10px;
 }
-._740174f3d6a2c8fe-inner._740174f3d6a2c8fe-sansAttachButton > ._740174f3d6a2c8fe-textArea::-webkit-scrollbar {
+.inner__74017.sansAttachButton__74017 > .textArea__74017::-webkit-scrollbar {
   height: 12px;
   width: 12px;
 }
-._740174f3d6a2c8fe-inner._740174f3d6a2c8fe-sansAttachButton > ._740174f3d6a2c8fe-textArea::-webkit-scrollbar-thumb {
+.inner__74017.sansAttachButton__74017 > .textArea__74017::-webkit-scrollbar-thumb {
   background-color: hsl(var(--primary-800-hsl) /.6);
   border-radius: 8px;
 }
-._740174f3d6a2c8fe-inner._740174f3d6a2c8fe-sansAttachButton > ._740174f3d6a2c8fe-textArea::-webkit-scrollbar-track {
+.inner__74017.sansAttachButton__74017 > .textArea__74017::-webkit-scrollbar-track {
   border-width: initial;
 }
-._740174f3d6a2c8fe-inner._740174f3d6a2c8fe-sansAttachButton > ._740174f3d6a2c8fe-textArea::-webkit-scrollbar-thumb,
-._740174f3d6a2c8fe-inner._740174f3d6a2c8fe-sansAttachButton > ._740174f3d6a2c8fe-textArea::-webkit-scrollbar-track {
+.inner__74017.sansAttachButton__74017 > .textArea__74017::-webkit-scrollbar-thumb,
+.inner__74017.sansAttachButton__74017 > .textArea__74017::-webkit-scrollbar-track {
   background-clip: padding-box;
   border: 4px solid transparent;
 }
 
-._740174f3d6a2c8fe-inner._740174f3d6a2c8fe-sansAttachButton > ._740174f3d6a2c8fe-buttons {
+.inner__74017.sansAttachButton__74017 > ._740174f3d6a2c8fe-buttons {
   grid-column: 3;
   grid-row: 2;
   justify-content: flex-end;
   padding-right: 8px;
 }
 
-._740174f3d6a2c8fe-inner._740174f3d6a2c8fe-sansAttachButton > ._0923f156a0410684-uploadInput,
-._740174f3d6a2c8fe-inner._740174f3d6a2c8fe-sansAttachButton > ._0923f156a0410684-attachWrapper,
-._740174f3d6a2c8fe-inner._740174f3d6a2c8fe-sansAttachButton > ._740174f3d6a2c8fe-buttons {
+.inner__74017.sansAttachButton__74017 > .uploadInput__0923f,
+.inner__74017.sansAttachButton__74017 > .attachWrapper__0923f,
+.inner__74017.sansAttachButton__74017 > ._740174f3d6a2c8fe-buttons {
   position: sticky;
   bottom: 0;
   background: var(--bg-overlay-floating,var(--chat-background-default));

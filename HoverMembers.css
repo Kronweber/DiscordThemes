@@ -1,23 +1,23 @@
 /* A custom hover members made by Kronweber */
 
-.c8ffbb79449f399c-container {
+.container_c8ffbb {
   transition: 0.5s;
   width: 70px !important;
 }
 
-.c8ffbb79449f399c-container:hover {
+.container_c8ffbb:hover {
   transition: 0.5s;
   width: 265px !important;
 }
 
-.c8ffbb79449f399c-membersGroup {
+.membersGroup_c8ffbb {
   transition: 0.5s;
   height: 0px !important;
   opacity: 0% !important;
   padding: 0px !important;
 }
 
-.c8ffbb79449f399c-container:hover .c8ffbb79449f399c-membersGroup {
+.container_c8ffbb:hover .membersGroup_c8ffbb {
   transition: 0.5s;
   height: 40px !important;
   opacity: 100% !important;

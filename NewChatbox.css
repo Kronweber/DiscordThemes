@@ -1,4 +1,7 @@
 /* A custom chatbox made by Kronweber */
+.scrollableContainer__74017 {
+  overflow-y: hidden;
+}
 
 .inner__74017.sansAttachButton__74017 {
   display: grid;

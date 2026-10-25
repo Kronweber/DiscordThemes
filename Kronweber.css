@@ -1,4 +1,4 @@
-/* CSS snippets made by Kronweber as extra customizations to the T1 theme */
+/* CSS snippets made by Kronweber as extra customizations */
 
 [class*=channelTextAreaDisabled] {
   display: none;
@@ -17,3 +17,9 @@
 /*
 ------------------PLUGIN FIXES BELOW------------------
 */
+
+/* Keep the online friends count on one line */
+#vc-friendcount {
+  font-size: 11px !important;
+  white-space: nowrap;
+}

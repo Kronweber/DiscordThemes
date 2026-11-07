@@ -83,17 +83,18 @@
 }
 
 /* Toolbar */
-:is(.channelTextArea_z_gUBg > .scrollableContainer_2x8-Qn, .messageInput_yLOKc6, .bioTextArea_agtm70) > .inner_2x8-Qn > :is(input[type=file], .attachButton_2x8-Qn, :has(> .attachButton_2x8-Qn)) {
+:is(.channelTextArea_z_gUBg > .scrollableContainer_2x8-Qn, .messageInput_yLOKc6, .bioTextArea_agtm70) > .inner_2x8-Qn > :is(.uploadInput_7TM4SO, .attachWrapper_7TM4SO) {
   grid-area: attach;
 }
-:is(.channelTextArea_z_gUBg > .scrollableContainer_2x8-Qn, .messageInput_yLOKc6, .bioTextArea_agtm70) > .inner_2x8-Qn > :is(.attachButton_2x8-Qn, :has(> .attachButton_2x8-Qn)) {
+:is(.channelTextArea_z_gUBg > .scrollableContainer_2x8-Qn, .messageInput_yLOKc6, .bioTextArea_agtm70) > .inner_2x8-Qn > .attachWrapper_7TM4SO {
   position: static;
   align-self: center;
   display: flex;
+  padding: 0 calc(var(--nc-gutter) - 6px);
 }
-:is(.channelTextArea_z_gUBg > .scrollableContainer_2x8-Qn, .messageInput_yLOKc6, .bioTextArea_agtm70) > .inner_2x8-Qn .attachButton_2x8-Qn {
+:is(.channelTextArea_z_gUBg > .scrollableContainer_2x8-Qn, .messageInput_yLOKc6, .bioTextArea_agtm70) > .inner_2x8-Qn > .attachWrapper_7TM4SO > .attachButton_7TM4SO {
   position: static;
-  margin-inline: calc(var(--nc-gutter) - 6px);
+  margin-inline: 0;
 }
 :is(.channelTextArea_z_gUBg > .scrollableContainer_2x8-Qn, .messageInput_yLOKc6, .bioTextArea_agtm70) > .inner_2x8-Qn > .buttons_2x8-Qn {
   grid-area: buttons;
@@ -117,7 +118,7 @@
   gap: 4px;
   line-height: 16px;
 }
-:is(.channelTextArea_z_gUBg, .bioTextAreaContainer_agtm70, .channelTextArea_2x8-Qn:has(> .messageInput_yLOKc6)):has(.attachButton_2x8-Qn) > :is(.vc-charCounter-counter, .characterCount_A7cPID) {
+:is(.channelTextArea_z_gUBg, .bioTextAreaContainer_agtm70, .channelTextArea_2x8-Qn:has(> .messageInput_yLOKc6)):has(.attachWrapper_7TM4SO) > :is(.vc-charCounter-counter, .characterCount_A7cPID) {
   inset-inline-start: calc(var(--nc-gutter) * 2 + 32px);
 }
 :is(.channelTextArea_z_gUBg, .bioTextAreaContainer_agtm70, .channelTextArea_2x8-Qn:has(> .messageInput_yLOKc6)).charCountShowing_2x8-Qn {

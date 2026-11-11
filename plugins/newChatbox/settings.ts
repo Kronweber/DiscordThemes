@@ -17,7 +17,7 @@ export const settings = definePluginSettings({
     },
     stickerStrip: {
         type: OptionType.BOOLEAN,
-        description: "Sticker strip in the toolbar row",
+        description: "Sticker strip in the toolbar row (needs the layout)",
         default: true
     },
     source: {

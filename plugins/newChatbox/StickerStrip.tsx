@@ -19,13 +19,10 @@ import {
     Tooltip,
     UserSettingsProtoStore,
     UserStore,
-    useLayoutEffect,
-    useRef,
     useState,
     useStateFromStores
 } from "@webpack/common";
 
-import { getSelectors } from "./layout";
 import { settings } from "./settings";
 
 const StickersPersistedStore = findStoreLazy("StickersPersistedStore") as FluxStore & {
@@ -92,50 +89,6 @@ function stickerUrl({ id, format_type }: Sticker, animated: boolean, size: numbe
     return `${CDN}/${id}.png?size=${px}`;
 }
 
-/**
- * The character counter is absolutely positioned in the toolbar row, outside the grid, so it can't push the
- * strip aside by itself. Measure where it ends and pad the buttons cell past it (--nc-counter-gap).
- */
-function useCounterGap(stripRef: React.RefObject<HTMLDivElement | null>) {
-    useLayoutEffect(() => {
-        const buttons = stripRef.current?.parentElement;
-        const sel = getSelectors();
-        const box = buttons?.closest<HTMLElement>(sel.textArea.channelTextArea);
-        if (!buttons || !box) return;
-
-        const counterSelector = `:scope > :is(.vc-charCounter-counter, ${sel.charCount.characterCount})`;
-        let counter: Element | null = null;
-
-        const update = () => {
-            const next = box.querySelector(counterSelector);
-            if (next !== counter) {
-                if (counter) resize.unobserve(counter);
-                if (next) resize.observe(next);
-                counter = next;
-            }
-
-            const rect = counter?.getBoundingClientRect();
-            const gap = rect?.width
-                ? Math.max(0, rect.right - buttons.getBoundingClientRect().left)
-                : 0;
-
-            buttons.style.setProperty("--nc-counter-gap", gap ? `calc(${gap}px + var(--nc-counter-spacing, 8px))` : "0px");
-        };
-
-        const resize = new ResizeObserver(update);
-        const mutations = new MutationObserver(update);
-        resize.observe(buttons);
-        mutations.observe(box, { childList: true });
-        update();
-
-        return () => {
-            resize.disconnect();
-            mutations.disconnect();
-            buttons.style.removeProperty("--nc-counter-gap");
-        };
-    }, []);
-}
-
 function StickerButton({ sticker, enabled, animate, size, onSend }: {
     sticker: Sticker;
     enabled: boolean;
@@ -186,9 +139,6 @@ function Strip({ channel, stickers, maxStickers, size, unsendable, animate }: {
     unsendable: string;
     animate: string;
 }) {
-    const ref = useRef<HTMLDivElement>(null);
-    useCounterGap(ref);
-
     const items = stickers
         .map(sticker => ({ sticker, enabled: canSend(sticker, channel) }))
         .filter(i => i.enabled || unsendable === "dim")
@@ -196,7 +146,6 @@ function Strip({ channel, stickers, maxStickers, size, unsendable, animate }: {
 
     return (
         <div
-            ref={ref}
             className="vc-nc-strip"
             style={{ "--vc-nc-size": `${size}px` } as React.CSSProperties}
             onWheel={e => { if (e.deltaY) e.currentTarget.scrollLeft += e.deltaY; }}
@@ -216,8 +165,8 @@ function Strip({ channel, stickers, maxStickers, size, unsendable, animate }: {
 }
 
 export const StickerStrip: ChatBarButtonFactory = ({ channel, isAnyChat, type }) => {
-    const { stickerStrip, source, maxStickers, size, unsendable, animate } =
-        settings.use(["stickerStrip", "source", "maxStickers", "size", "unsendable", "animate"]);
+    const { layout, stickerStrip, source, maxStickers, size, unsendable, animate } =
+        settings.use(["layout", "stickerStrip", "source", "maxStickers", "size", "unsendable", "animate"]);
 
     const stickers = useStateFromStores(
         [UserSettingsProtoStore, StickersPersistedStore, StickersStore],
@@ -226,7 +175,8 @@ export const StickerStrip: ChatBarButtonFactory = ({ channel, isAnyChat, type })
         (a, b) => a.length === b.length && a.every((s, i) => s.id === b[i].id)
     );
 
-    if (!stickerStrip || !isAnyChat || !type.stickers?.allowSending || !stickers.length) return null;
+    // Without the layout's toolbar row the strip would squeeze out the text box
+    if (!layout || !stickerStrip || !isAnyChat || !type.stickers?.allowSending || !stickers.length) return null;
 
     return <Strip channel={channel} stickers={stickers} maxStickers={maxStickers} size={size} unsendable={unsendable} animate={animate} />;
 };

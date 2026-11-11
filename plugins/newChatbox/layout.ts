@@ -88,13 +88,11 @@ function resolveSelectors() {
     return { selectors: selectors as Selectors, missing };
 }
 
-let current: Selectors | null = null;
-export const getSelectors = () => current ??= resolveSelectors().selectors;
-
 export function layoutCss(s: Selectors) {
     const box = `:is(${s.chat.channelTextArea} > ${s.textArea.scrollableContainer}, ${s.forward.messageInput}, ${s.bio.bioTextArea})`;
     const inner = `${box} > ${s.textArea.inner}:not(${s.textArea.innerVoiceRecording})`;
-    const counterHost = `:is(${s.chat.channelTextArea}, ${s.bio.bioTextAreaContainer}, ${s.textArea.channelTextArea}:has(> ${s.forward.messageInput}))`;
+    const toolbarCounterHost = `:is(${s.bio.bioTextAreaContainer}, ${s.textArea.channelTextArea}:has(> ${s.forward.messageInput}))`;
+    const counterHost = `:is(${s.chat.channelTextArea}, ${toolbarCounterHost})`;
     const counter = `:is(.vc-charCounter-counter, ${s.charCount.characterCount})`;
 
     return `
@@ -105,7 +103,7 @@ export function layoutCss(s: Selectors) {
     --nc-gutter: 12px;
     --nc-separator: var(--border-subtle);
     --nc-forward-max-height: 30vh;
-    --nc-counter-spacing: 8px;
+    --nc-counter-offset: 4px;
 }
 
 /* Layout */
@@ -207,26 +205,31 @@ ${box} > ${s.textArea.inner} > ${s.textArea.hiddenAppLauncherAnchor} {
     justify-self: end;
 }
 
-/* Sticker strip: the buttons cell also takes the empty middle column. The strip goes first and fills it;
-   its start is pushed past the character counter (--nc-counter-gap is measured by the plugin). */
+/* Sticker strip */
 ${box} > ${s.textArea.inner} > ${s.textArea.buttons}:has(> .vc-nc-strip) {
     grid-column: 2 / -1;
     min-width: 0;
-    padding-inline-start: var(--nc-counter-gap, 0px);
 }
 
 /* Character counter */
 ${counterHost} > ${counter} {
-    bottom: calc(var(--nc-toolbar-height) / 2);
-    inset-inline: var(--nc-gutter) auto;
-    transform: translateY(50%);
     flex-direction: row;
     align-items: center;
     gap: 4px;
     line-height: 16px;
     white-space: nowrap;
 }
-${counterHost}:has(${s.attach.attachWrapper}) > ${counter} {
+${s.chat.channelTextArea} > ${counter} {
+    top: auto;
+    bottom: calc(100% + var(--nc-counter-offset));
+    inset-inline: auto var(--nc-gutter);
+}
+${toolbarCounterHost} > ${counter} {
+    bottom: calc(var(--nc-toolbar-height) / 2);
+    inset-inline: var(--nc-gutter) auto;
+    transform: translateY(50%);
+}
+${toolbarCounterHost}:has(${s.attach.attachWrapper}) > ${counter} {
     inset-inline-start: calc(var(--nc-gutter) * 2 + 32px);
 }
 ${counterHost}${s.textArea.charCountShowing} {
@@ -258,7 +261,6 @@ function apply(enabled: boolean) {
     clearPending();
 
     const { selectors, missing } = resolveSelectors();
-    current = selectors;
 
     styleEl ??= createAndAppendStyle("vc-newchatbox-layout", document.head);
     styleEl.textContent = enabled ? layoutCss(selectors) : "";
@@ -294,5 +296,4 @@ export function stopLayout() {
     clearPending();
     styleEl?.remove();
     styleEl = null;
-    current = null;
 }

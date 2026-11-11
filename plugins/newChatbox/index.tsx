@@ -6,7 +6,7 @@
  *
  * Layout variables can be overridden in QuickCSS, e.g. :root { --nc-toolbar-height: 40px; }
  * (--nc-text-height, --nc-text-min-with-previews, --nc-gutter, --nc-separator,
- *  --nc-forward-max-height, --nc-counter-spacing).
+ *  --nc-forward-max-height, --nc-counter-offset).
  */
 
 import definePlugin, { IconComponent } from "@utils/types";

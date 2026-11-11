@@ -884,7 +884,7 @@
             "authenticated": false,
             "url": "https://api.vencord.dev/",
             "settingsSync": false,
-            "settingsSyncVersion": 1794424137999
+            "settingsSyncVersion": 1794431726693
         },
         "notifyAboutUpdates": true,
         "winNativeTitleBar": false

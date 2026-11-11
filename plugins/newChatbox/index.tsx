@@ -32,6 +32,7 @@ export default definePlugin({
     authors: [{ name: "Kronweber", id: 675020556655001611n }],
     settings,
     managedStyle,
+    requiresRestart: true,
 
     chatBarButton: {
         icon: StickerIcon,

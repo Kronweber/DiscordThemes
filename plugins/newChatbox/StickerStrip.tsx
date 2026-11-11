@@ -75,8 +75,11 @@ function sendSticker(sticker: Sticker, channelId: string) {
     if (reply) FluxDispatcher.dispatch({ type: "DELETE_PENDING_REPLY", channelId });
 }
 
+// Sizes Discord's media proxy accepts in this range; others (e.g. 72) return 400
+const PROXY_SIZES = [48, 56, 64, 80, 96, 128, 160];
+
 function stickerUrl({ id, format_type }: Sticker, animated: boolean, size: number) {
-    const px = size * 2; // crisp on HiDPI screens
+    const px = PROXY_SIZES.find(s => s >= size * 2) ?? 160; // 2x for crisp HiDPI
 
     if (format_type === StickerFormatType.GIF)
         return animated
@@ -152,7 +155,7 @@ function Strip({ channel, stickers, maxStickers, size, unsendable, animate }: {
         >
             {items.map(({ sticker, enabled }) => (
                 <StickerButton
-                    key={sticker.id}
+                    key={`${sticker.id}-${size}`}
                     sticker={sticker}
                     enabled={enabled}
                     animate={animate}

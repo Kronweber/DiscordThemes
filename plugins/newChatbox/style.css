@@ -1,0 +1,72 @@
+/* Sticker strip (layout-independent part; the grid placement lives in layout.ts) */
+.vc-nc-strip {
+    --vc-nc-size: 32px;
+
+    order: -1; /* before the other Vencord chat bar buttons, e.g. SendTimestamps */
+    display: flex;
+    flex: 1 1 auto;
+    align-items: center;
+    gap: 4px;
+    min-width: 0;
+    padding: 4px;
+    margin-inline-end: 4px;
+    overflow: auto hidden;
+    scrollbar-width: none;
+}
+
+.vc-nc-strip::-webkit-scrollbar {
+    display: none;
+}
+
+.vc-nc-sticker {
+    all: unset;
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    display: grid;
+    place-items: center;
+    width: var(--vc-nc-size);
+    height: var(--vc-nc-size);
+    padding: 2px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+/* Right-align next to the chat bar buttons without breaking overflow scrolling */
+.vc-nc-sticker:first-child {
+    margin-inline-start: auto;
+}
+
+.vc-nc-sticker:hover,
+.vc-nc-sticker:focus-visible {
+    background-color: var(--background-modifier-hover, rgb(128 128 128 / 16%));
+    transform: scale(1.12);
+}
+
+.vc-nc-sticker:focus-visible {
+    outline: 2px solid var(--focus-primary, #00b0f4);
+}
+
+.vc-nc-sticker img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    pointer-events: none;
+}
+
+.vc-nc-sticker.vc-nc-disabled {
+    opacity: 0.35;
+    filter: grayscale(1);
+    cursor: not-allowed;
+    transform: none;
+}
+
+.vc-nc-lottie {
+    max-height: 100%;
+    overflow: hidden;
+    font-size: 9px;
+    line-height: 1.1;
+    text-align: center;
+    overflow-wrap: anywhere;
+    color: var(--text-muted, #949ba4);
+}

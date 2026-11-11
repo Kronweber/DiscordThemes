@@ -29,7 +29,7 @@ const StickerIcon: IconComponent = ({ height = 20, width = 20, className }) => (
 export default definePlugin({
     name: "NewChatbox",
     description: "Chatbox layout with a toolbar row, and a one-click strip of your favourite and most used stickers",
-    authors: [{ name: "Kronweber", id: 0n }],
+    authors: [{ name: "Kronweber", id: 675020556655001611n }],
     settings,
     managedStyle,
 

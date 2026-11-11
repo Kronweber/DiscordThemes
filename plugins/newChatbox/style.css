@@ -23,6 +23,7 @@
     box-sizing: border-box;
     flex: 0 0 auto;
     display: grid;
+    grid-template: minmax(0, 1fr) / minmax(0, 1fr);
     place-items: center;
     width: var(--vc-nc-size);
     height: var(--vc-nc-size);

@@ -864,7 +864,7 @@
                 "layout": true,
                 "stickerStrip": true,
                 "source": "both",
-                "maxStickers": 16,
+                "maxStickers": 20,
                 "size": 32,
                 "unsendable": "dim",
                 "animate": "hover"

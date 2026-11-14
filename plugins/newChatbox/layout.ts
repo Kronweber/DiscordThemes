@@ -11,9 +11,11 @@
  * [class^="bioTextArea_"], and the CSS is rebuilt as soon as they load.
  */
 
+import { managedStyleRootNode } from "@api/Styles";
 import { createAndAppendStyle } from "@utils/css";
 import { Logger } from "@utils/Logger";
 import { cache, filters, makeClassNameRegex, waitFor, waitForSubscriptions } from "@webpack";
+import { PopoutWindowStore } from "@webpack/common";
 
 const logger = new Logger("NewChatbox");
 
@@ -262,8 +264,9 @@ function apply(enabled: boolean) {
 
     const { selectors, missing } = resolveSelectors();
 
-    styleEl ??= createAndAppendStyle("vc-newchatbox-layout", document.head);
+    styleEl ??= createAndAppendStyle("vc-newchatbox-layout", managedStyleRootNode);
     styleEl.textContent = enabled ? layoutCss(selectors) : "";
+    syncPopouts();
 
     if (missing.length) logger.info("Not loaded yet, using prefix selectors for:", missing.join(", "));
 
@@ -277,6 +280,15 @@ function apply(enabled: boolean) {
             clearTimeout(rebuildTimer);
             rebuildTimer = setTimeout(() => apply(isEnabled()), 50);
         });
+    }
+}
+
+// Vencord copies its style root into popout windows when they open; keep those copies current
+function syncPopouts() {
+    if (!PopoutWindowStore) return;
+    for (const key of PopoutWindowStore.getWindowKeys()) {
+        const copy = PopoutWindowStore.getWindow(key)?.document?.getElementById("vc-newchatbox-layout");
+        if (copy) copy.textContent = styleEl?.textContent ?? "";
     }
 }
 
@@ -294,6 +306,8 @@ export function refreshLayout() {
 export function stopLayout() {
     clearTimeout(rebuildTimer);
     clearPending();
+    if (styleEl) styleEl.textContent = "";
+    syncPopouts();
     styleEl?.remove();
     styleEl = null;
 }
